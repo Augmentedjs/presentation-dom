@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'presentation-dom.js',
     publicPath: '/dist/',
-    library: "dom",
+    library: "presentation-dom",
     globalObject: 'this',
     libraryTarget: "umd",
     umdNamedDefine: true
