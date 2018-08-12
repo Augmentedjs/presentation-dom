@@ -209,6 +209,21 @@ class Dom {
     }
     return myEl;
   };
+
+  /**
+   * Returns true if it contains the class
+   * @param {Node} el Element or string of element selector
+   * @param {string} cls the class value
+   * @static
+   */
+  static containsClass(el, cls) {
+    const myEl = this.selector(el);
+    if (myEl) {
+      return myEl.classList.contains(cls);
+    }
+    return false;
+  };
+
   /**
    * Empty a element container
    * @param {Node} el Element or string of element selector
