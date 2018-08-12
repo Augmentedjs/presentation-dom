@@ -52,7 +52,9 @@ class Dom {
           myEl.innerHTML = value;
         }
       }
+      return myEl;
     }
+    return null;
   };
   /**
    * Gets the value of an element<br/>
@@ -135,6 +137,7 @@ class Dom {
       myEl.style.display = "none";
       myEl.style.visibility = "hidden";
     }
+    return myEl;
   };
   /**
    * Shows an element
@@ -148,6 +151,7 @@ class Dom {
       myEl.style.display = (display) ? display : "block";
       myEl.style.visibility = "visible";
     }
+    return myEl;
   };
   /**
    * Sets the class attribute (completely)
@@ -160,6 +164,7 @@ class Dom {
     if (myEl) {
       myEl.setAttribute("class", cls);
     }
+    return myEl;
   };
   /**
    * Adds a class attribute
@@ -173,6 +178,7 @@ class Dom {
       myEl.classList.add(cls);
       //console.debug(`addClass ${cls} to ${el}`);
     }
+    return myEl;
   };
   /**
    * Remove a class attribute
@@ -186,6 +192,7 @@ class Dom {
       myEl.classList.remove(cls);
       //console.debug(`removeClass ${cls} to ${el}`);
     }
+    return myEl;
   };
   /**
    * Empty a element container
@@ -194,6 +201,7 @@ class Dom {
    */
   static empty(el) {
     this.setValue(el, "", false);
+    return el;
   };
   /**
    * injectTemplate method - Injects a template element at a mount point
@@ -207,6 +215,7 @@ class Dom {
       const clone = document.importNode(t.content, true);
       el.appendChild(clone);
     }
+    return el;
   };
 };
 
