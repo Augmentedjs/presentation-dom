@@ -299,6 +299,21 @@ class Dom {
     }
     return myEl;
   }
+
+  /**
+   * Replace a class attribute with a new one
+   * @param {Node} el Element or string of element selector
+   * @param {string} oldCls the old class value
+   * @param {string} newCls the new class value
+   * @static
+   */
+  static replaceClass(el, oldCls, newCls) {
+    const myEl = this.selector(el);
+    if (myEl) {
+      myEl.classList.replace(oldCls, newCls);
+    }
+    return myEl;
+  }
   /**
    * Empty a element container
    * @param {Node} el Element or string of element selector

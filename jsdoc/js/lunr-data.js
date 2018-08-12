@@ -188,6 +188,29 @@ window.lunrData = {
           "remov",
           "removeclass"
         ],
+        "Dom.html#.replaceClass": [
+          "attribut",
+          "class",
+          "dom.replaceclass",
+          "el",
+          "function",
+          "lt;static&gt",
+          "new",
+          "newcl",
+          "oldcl",
+          "on",
+          "replac",
+          "replaceclass"
+        ],
+        "Dom.html#.empty": [
+          "contain",
+          "dom.empti",
+          "el",
+          "element",
+          "empti",
+          "function",
+          "lt;static&gt"
+        ],
         "Dom.html#.getViewportHeight": [
           "browser",
           "dom.getviewportheight",
@@ -209,18 +232,9 @@ window.lunrData = {
           "mount",
           "point",
           "templat"
-        ],
-        "Dom.html#.empty": [
-          "contain",
-          "dom.empti",
-          "el",
-          "element",
-          "empti",
-          "function",
-          "lt;static&gt"
         ]
       },
-      "length": 18
+      "length": 19
     },
     "tokenStore": {
       "root": {
@@ -298,6 +312,10 @@ window.lunrData = {
                           "Dom.html#.removeClass": {
                             "ref": "Dom.html#.removeClass",
                             "tf": 16.666666666666664
+                          },
+                          "Dom.html#.replaceClass": {
+                            "ref": "Dom.html#.replaceClass",
+                            "tf": 10
                           }
                         }
                       }
@@ -698,6 +716,61 @@ window.lunrData = {
                           }
                         }
                       }
+                    },
+                    "p": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "c": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "c": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "a": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {},
+                                      "s": {
+                                        "docs": {
+                                          "Dom.html#.replaceClass": {
+                                            "ref": "Dom.html#.replaceClass",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "i": {
+                          "docs": {
+                            "Dom.html#.empty": {
+                              "ref": "Dom.html#.empty",
+                              "tf": 1150
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 },
@@ -732,26 +805,6 @@ window.lunrData = {
                                   }
                                 }
                               }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "e": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "i": {
-                          "docs": {
-                            "Dom.html#.empty": {
-                              "ref": "Dom.html#.empty",
-                              "tf": 1150
                             }
                           }
                         }
@@ -854,6 +907,25 @@ window.lunrData = {
                   "index.html": {
                     "ref": "index.html",
                     "tf": 214
+                  }
+                }
+              }
+            },
+            "w": {
+              "docs": {
+                "Dom.html#.replaceClass": {
+                  "ref": "Dom.html#.replaceClass",
+                  "tf": 10
+                }
+              },
+              "c": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Dom.html#.replaceClass": {
+                      "ref": "Dom.html#.replaceClass",
+                      "tf": 20
+                    }
                   }
                 }
               }
@@ -961,6 +1033,46 @@ window.lunrData = {
                                 "Dom.html#.removeClass": {
                                   "ref": "Dom.html#.removeClass",
                                   "tf": 675
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "c": {
+                    "docs": {
+                      "Dom.html#.replaceClass": {
+                        "ref": "Dom.html#.replaceClass",
+                        "tf": 10
+                      }
+                    },
+                    "e": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "s": {
+                              "docs": {},
+                              "s": {
+                                "docs": {
+                                  "Dom.html#.replaceClass": {
+                                    "ref": "Dom.html#.replaceClass",
+                                    "tf": 670
+                                  }
                                 }
                               }
                             }
@@ -1268,6 +1380,10 @@ window.lunrData = {
                     "Dom.html#.removeClass": {
                       "ref": "Dom.html#.removeClass",
                       "tf": 16.666666666666664
+                    },
+                    "Dom.html#.replaceClass": {
+                      "ref": "Dom.html#.replaceClass",
+                      "tf": 10
                     }
                   }
                 }
@@ -1447,6 +1563,14 @@ window.lunrData = {
                                     "ref": "Dom.html#.removeClass",
                                     "tf": 25
                                   },
+                                  "Dom.html#.replaceClass": {
+                                    "ref": "Dom.html#.replaceClass",
+                                    "tf": 20
+                                  },
+                                  "Dom.html#.empty": {
+                                    "ref": "Dom.html#.empty",
+                                    "tf": 33.33333333333333
+                                  },
                                   "Dom.html#.getViewportHeight": {
                                     "ref": "Dom.html#.getViewportHeight",
                                     "tf": 50
@@ -1454,10 +1578,6 @@ window.lunrData = {
                                   "Dom.html#.injectTemplate": {
                                     "ref": "Dom.html#.injectTemplate",
                                     "tf": 25
-                                  },
-                                  "Dom.html#.empty": {
-                                    "ref": "Dom.html#.empty",
-                                    "tf": 33.33333333333333
                                   }
                                 }
                               }
@@ -1536,16 +1656,20 @@ window.lunrData = {
                             "ref": "Dom.html#.removeClass",
                             "tf": 110
                           },
+                          "Dom.html#.replaceClass": {
+                            "ref": "Dom.html#.replaceClass",
+                            "tf": 110
+                          },
+                          "Dom.html#.empty": {
+                            "ref": "Dom.html#.empty",
+                            "tf": 110
+                          },
                           "Dom.html#.getViewportHeight": {
                             "ref": "Dom.html#.getViewportHeight",
                             "tf": 110
                           },
                           "Dom.html#.injectTemplate": {
                             "ref": "Dom.html#.injectTemplate",
-                            "tf": 110
-                          },
-                          "Dom.html#.empty": {
-                            "ref": "Dom.html#.empty",
                             "tf": 110
                           }
                         },
@@ -1747,6 +1871,10 @@ window.lunrData = {
                 "ref": "Dom.html#.removeClass",
                 "tf": 25
               },
+              "Dom.html#.replaceClass": {
+                "ref": "Dom.html#.replaceClass",
+                "tf": 20
+              },
               "Dom.html#.empty": {
                 "ref": "Dom.html#.empty",
                 "tf": 33.33333333333333
@@ -1778,13 +1906,13 @@ window.lunrData = {
                           "ref": "Dom.html#.show",
                           "tf": 25
                         },
-                        "Dom.html#.injectTemplate": {
-                          "ref": "Dom.html#.injectTemplate",
-                          "tf": 7.142857142857142
-                        },
                         "Dom.html#.empty": {
                           "ref": "Dom.html#.empty",
                           "tf": 16.666666666666664
+                        },
+                        "Dom.html#.injectTemplate": {
+                          "ref": "Dom.html#.injectTemplate",
+                          "tf": 7.142857142857142
                         }
                       },
                       "w": {
@@ -1880,7 +2008,12 @@ window.lunrData = {
         "o": {
           "docs": {},
           "n": {
-            "docs": {},
+            "docs": {
+              "Dom.html#.replaceClass": {
+                "ref": "Dom.html#.replaceClass",
+                "tf": 10
+              }
+            },
             "l": {
               "docs": {},
               "y": {
@@ -1899,6 +2032,23 @@ window.lunrData = {
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Dom.html#.replaceClass": {
+                      "ref": "Dom.html#.replaceClass",
+                      "tf": 20
                     }
                   }
                 }
@@ -2039,7 +2189,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 144
+      "length": 156
     },
     "corpusTokens": [
       "act",
@@ -2067,6 +2217,7 @@ window.lunrData = {
       "dom.injecttempl",
       "dom.queri",
       "dom.removeclass",
+      "dom.replaceclass",
       "dom.selector",
       "dom.setclass",
       "dom.setvalu",
@@ -2094,7 +2245,11 @@ window.lunrData = {
       "lt;static&gt",
       "method",
       "mount",
+      "new",
+      "newcl",
       "next",
+      "oldcl",
+      "on",
       "onlytext",
       "point",
       "present",
@@ -2103,6 +2258,8 @@ window.lunrData = {
       "relat",
       "remov",
       "removeclass",
+      "replac",
+      "replaceclass",
       "select",
       "selector",
       "set",
@@ -2277,6 +2434,26 @@ window.lunrData = {
       "summary": "",
       "description": "Remove a class attribute"
     },
+    "Dom.html#.replaceClass": {
+      "id": "Dom.html#.replaceClass",
+      "kind": "function",
+      "title": "&lt;static&gt; replaceClass( el, oldCls, newCls )",
+      "longname": "Dom.replaceClass",
+      "name": "replaceClass",
+      "tags": "Dom.replaceClass replaceClass",
+      "summary": "",
+      "description": "Replace a class attribute with a new one"
+    },
+    "Dom.html#.empty": {
+      "id": "Dom.html#.empty",
+      "kind": "function",
+      "title": "&lt;static&gt; empty( el )",
+      "longname": "Dom.empty",
+      "name": "empty",
+      "tags": "Dom.empty empty",
+      "summary": "",
+      "description": "Empty a element container"
+    },
     "Dom.html#.getViewportHeight": {
       "id": "Dom.html#.getViewportHeight",
       "kind": "function",
@@ -2296,16 +2473,6 @@ window.lunrData = {
       "tags": "Dom.injectTemplate injectTemplate",
       "summary": "",
       "description": "injectTemplate method - Injects a template element at a mount point"
-    },
-    "Dom.html#.empty": {
-      "id": "Dom.html#.empty",
-      "kind": "function",
-      "title": "&lt;static&gt; empty( el )",
-      "longname": "Dom.empty",
-      "name": "empty",
-      "tags": "Dom.empty empty",
-      "summary": "",
-      "description": "Empty a element container"
     }
   }
 };
