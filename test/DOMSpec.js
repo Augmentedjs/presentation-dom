@@ -89,6 +89,21 @@ describe("Given Augmented Presentation Dom", () => {
 			expect(c).not.to.contain("bubba");
 		});
 
+		it("can replace the class attribute", () => {
+			Dom.addClass("#sandbox", "bubba");
+			Dom.replaceClass("#sandbox", "bubba", "chulo");
+			const e = document.querySelector("#sandbox");
+			const c = e.getAttribute("class");
+			expect(c).to.contain("chulo");
+		});
+
+		it("can check if it contains the class attribute", () => {
+			Dom.addClass("#sandbox", "bubba");
+			const e = document.querySelector("#sandbox");
+			const c = e.getAttribute("class");
+			expect(Dom.containsClass("#sandbox", "bubba")).to.be.true;
+		});
+
 		it("can empty an element", () => {
 			Dom.empty("#sandbox");
 			const e = document.querySelector("#sandbox");

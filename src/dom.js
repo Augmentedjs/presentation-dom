@@ -218,7 +218,7 @@ class Dom {
    */
   static containsClass(el, cls) {
     const myEl = this.selector(el);
-    if (myEl) {
+    if (myEl && myEl.classList) {
       return myEl.classList.contains(cls);
     }
     return false;
