@@ -8,7 +8,7 @@ import Dom from "./dom.js";
  * @example
  * $("#myElement");
  * $("section#main header");
- * - or start from Element:
+ *   - or start from Element:
  * $("header", mainSectionEl);
  */
 const $ = Dom.query;

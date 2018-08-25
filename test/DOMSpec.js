@@ -104,6 +104,14 @@ describe("Given Augmented Presentation Dom", () => {
 			expect(Dom.containsClass("#sandbox", "bubba")).to.be.true;
 		});
 
+		it("can toggle the class attribute", () => {
+			Dom.addClass("#sandbox", "bubba");
+			Dom.toggleClass("#sandbox", "bubba", "chulo");
+			const e = document.querySelector("#sandbox");
+			const c = e.getAttribute("class");
+			expect(c).to.contain("chulo");
+		});
+
 		it("can empty an element", () => {
 			Dom.empty("#sandbox");
 			const e = document.querySelector("#sandbox");

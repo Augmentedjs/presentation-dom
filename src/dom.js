@@ -29,7 +29,7 @@ class Dom {
   /**
    * Sets the value of an element<br/>
    * Will detect the correct method to do so by element type
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} value Value to set (or HTML)
    * @param {boolean} onlyText Value will set as text only
    * @static
@@ -59,7 +59,7 @@ class Dom {
   /**
    * Gets the value of an element<br/>
    * Will detect the correct method to do so by element type
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @returns {string} Returns the value of the element (or HTML)
    * @static
    */
@@ -107,7 +107,7 @@ class Dom {
    * Query function<br/>
    * Supports full query selection but acts like jQuery
    * @param {string} query Element or string of element selector
-   * @param {Node} el Element to start from (optional)
+   * @param {string|Node} el el Element to start from (optional)
    * @returns {NodeList|Node} Returns all the nodes selected
    * @static
    */
@@ -128,7 +128,7 @@ class Dom {
   };
   /**
    * Hides an element
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @static
    */
   static hide(el) {
@@ -141,7 +141,7 @@ class Dom {
   };
   /**
    * Shows an element
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} display Value to set for 'display' property (optional)
    * @static
    */
@@ -155,7 +155,7 @@ class Dom {
   };
   /**
    * Sets the class attribute (completely)
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} cls the class value
    * @static
    */
@@ -168,7 +168,7 @@ class Dom {
   };
   /**
    * Adds a class attribute
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} cls the class value
    * @static
    */
@@ -182,7 +182,7 @@ class Dom {
   };
   /**
    * Remove a class attribute
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} cls the class value
    * @static
    */
@@ -197,7 +197,7 @@ class Dom {
 
   /**
    * Replace a class attribute with a new one
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el el Element or string of element selector
    * @param {string} oldCls the old class value
    * @param {string} newCls the new class value
    * @static
@@ -212,8 +212,9 @@ class Dom {
 
   /**
    * Returns true if it contains the class
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el Element or string of element selector
    * @param {string} cls the class value
+   * @returns {boolean} Returns true is contains class
    * @static
    */
   static containsClass(el, cls) {
@@ -225,8 +226,22 @@ class Dom {
   };
 
   /**
+   * Toggle class on element
+   * @param {string|Node} el Element or string of element selector
+   * @param {string} cls the class 
+   * @static
+   */
+  static toggleClass(el, cls) {
+    const myEl = this.selector(el);
+    if (myEl) {
+      myEl.classList.toggle(cls);
+    }
+    return myEl;
+  };
+
+  /**
    * Empty a element container
-   * @param {Node} el Element or string of element selector
+   * @param {string|Node} el Element or string of element selector
    * @static
    */
   static empty(el) {
