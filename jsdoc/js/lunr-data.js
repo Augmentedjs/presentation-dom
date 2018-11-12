@@ -64,6 +64,16 @@ window.lunrData = {
           "function",
           "relat"
         ],
+        "Dom.html#.getViewportHeight": [
+          "browser",
+          "dom.getviewportheight",
+          "function",
+          "get",
+          "getviewportheight",
+          "height",
+          "lt;static&gt",
+          "viewport"
+        ],
         "Dom.html#.getViewportWidth": [
           "browser",
           "dom.getviewportwidth",
@@ -214,15 +224,25 @@ window.lunrData = {
           "return",
           "true"
         ],
-        "Dom.html#.getViewportHeight": [
-          "browser",
-          "dom.getviewportheight",
+        "Dom.html#.toggleClass": [
+          "cl",
+          "class",
+          "dom.toggleclass",
+          "el",
+          "element",
           "function",
-          "get",
-          "getviewportheight",
-          "height",
           "lt;static&gt",
-          "viewport"
+          "toggl",
+          "toggleclass"
+        ],
+        "Dom.html#.empty": [
+          "contain",
+          "dom.empti",
+          "el",
+          "element",
+          "empti",
+          "function",
+          "lt;static&gt"
         ],
         "Dom.html#.injectTemplate": [
           "dom.injecttempl",
@@ -235,18 +255,9 @@ window.lunrData = {
           "mount",
           "point",
           "templat"
-        ],
-        "Dom.html#.empty": [
-          "contain",
-          "dom.empti",
-          "el",
-          "element",
-          "empti",
-          "function",
-          "lt;static&gt"
         ]
       },
-      "length": 20
+      "length": 21
     },
     "tokenStore": {
       "root": {
@@ -475,26 +486,6 @@ window.lunrData = {
                                     "docs": {},
                                     "t": {
                                       "docs": {},
-                                      "w": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {},
-                                              "h": {
-                                                "docs": {
-                                                  "Dom.html#.getViewportWidth": {
-                                                    "ref": "Dom.html#.getViewportWidth",
-                                                    "tf": 1150
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
                                       "h": {
                                         "docs": {},
                                         "e": {
@@ -511,6 +502,26 @@ window.lunrData = {
                                                       "ref": "Dom.html#.getViewportHeight",
                                                       "tf": 1150
                                                     }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "w": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "d": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {},
+                                              "h": {
+                                                "docs": {
+                                                  "Dom.html#.getViewportWidth": {
+                                                    "ref": "Dom.html#.getViewportWidth",
+                                                    "tf": 1150
                                                   }
                                                 }
                                               }
@@ -810,6 +821,64 @@ window.lunrData = {
                     }
                   }
                 },
+                "t": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "l": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {
+                                        "Dom.html#.toggleClass": {
+                                          "ref": "Dom.html#.toggleClass",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "i": {
+                          "docs": {
+                            "Dom.html#.empty": {
+                              "ref": "Dom.html#.empty",
+                              "tf": 1150
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
                 "i": {
                   "docs": {},
                   "n": {
@@ -841,26 +910,6 @@ window.lunrData = {
                                   }
                                 }
                               }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "e": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "i": {
-                          "docs": {
-                            "Dom.html#.empty": {
-                              "ref": "Dom.html#.empty",
-                              "tf": 1150
                             }
                           }
                         }
@@ -1314,6 +1363,10 @@ window.lunrData = {
             "docs": {},
             "t": {
               "docs": {
+                "Dom.html#.getViewportHeight": {
+                  "ref": "Dom.html#.getViewportHeight",
+                  "tf": 12.5
+                },
                 "Dom.html#.getViewportWidth": {
                   "ref": "Dom.html#.getViewportWidth",
                   "tf": 12.5
@@ -1321,10 +1374,6 @@ window.lunrData = {
                 "Dom.html#.getValue": {
                   "ref": "Dom.html#.getValue",
                   "tf": 6.25
-                },
-                "Dom.html#.getViewportHeight": {
-                  "ref": "Dom.html#.getViewportHeight",
-                  "tf": 12.5
                 }
               },
               "v": {
@@ -1343,26 +1392,6 @@ window.lunrData = {
                             "docs": {},
                             "t": {
                               "docs": {},
-                              "w": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "d": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "h": {
-                                        "docs": {
-                                          "Dom.html#.getViewportWidth": {
-                                            "ref": "Dom.html#.getViewportWidth",
-                                            "tf": 700
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
                               "h": {
                                 "docs": {},
                                 "e": {
@@ -1379,6 +1408,26 @@ window.lunrData = {
                                               "ref": "Dom.html#.getViewportHeight",
                                               "tf": 700
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "w": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "h": {
+                                        "docs": {
+                                          "Dom.html#.getViewportWidth": {
+                                            "ref": "Dom.html#.getViewportWidth",
+                                            "tf": 700
                                           }
                                         }
                                       }
@@ -1430,6 +1479,10 @@ window.lunrData = {
               "Dom.html#.containsClass": {
                 "ref": "Dom.html#.containsClass",
                 "tf": 25
+              },
+              "Dom.html#.toggleClass": {
+                "ref": "Dom.html#.toggleClass",
+                "tf": 25
               }
             },
             "a": {
@@ -1465,6 +1518,10 @@ window.lunrData = {
                     "Dom.html#.containsClass": {
                       "ref": "Dom.html#.containsClass",
                       "tf": 12.5
+                    },
+                    "Dom.html#.toggleClass": {
+                      "ref": "Dom.html#.toggleClass",
+                      "tf": 16.666666666666664
                     }
                   }
                 }
@@ -1627,6 +1684,10 @@ window.lunrData = {
                               "docs": {},
                               "t": {
                                 "docs": {
+                                  "Dom.html#.getViewportHeight": {
+                                    "ref": "Dom.html#.getViewportHeight",
+                                    "tf": 50
+                                  },
                                   "Dom.html#.getViewportWidth": {
                                     "ref": "Dom.html#.getViewportWidth",
                                     "tf": 50
@@ -1679,17 +1740,17 @@ window.lunrData = {
                                     "ref": "Dom.html#.containsClass",
                                     "tf": 25
                                   },
-                                  "Dom.html#.getViewportHeight": {
-                                    "ref": "Dom.html#.getViewportHeight",
-                                    "tf": 50
-                                  },
-                                  "Dom.html#.injectTemplate": {
-                                    "ref": "Dom.html#.injectTemplate",
+                                  "Dom.html#.toggleClass": {
+                                    "ref": "Dom.html#.toggleClass",
                                     "tf": 25
                                   },
                                   "Dom.html#.empty": {
                                     "ref": "Dom.html#.empty",
                                     "tf": 33.33333333333333
+                                  },
+                                  "Dom.html#.injectTemplate": {
+                                    "ref": "Dom.html#.injectTemplate",
+                                    "tf": 25
                                   }
                                 }
                               }
@@ -1723,6 +1784,10 @@ window.lunrData = {
                           "Dom.html": {
                             "ref": "Dom.html",
                             "tf": 16.666666666666664
+                          },
+                          "Dom.html#.getViewportHeight": {
+                            "ref": "Dom.html#.getViewportHeight",
+                            "tf": 110
                           },
                           "Dom.html#.getViewportWidth": {
                             "ref": "Dom.html#.getViewportWidth",
@@ -1776,16 +1841,16 @@ window.lunrData = {
                             "ref": "Dom.html#.containsClass",
                             "tf": 110
                           },
-                          "Dom.html#.getViewportHeight": {
-                            "ref": "Dom.html#.getViewportHeight",
-                            "tf": 110
-                          },
-                          "Dom.html#.injectTemplate": {
-                            "ref": "Dom.html#.injectTemplate",
+                          "Dom.html#.toggleClass": {
+                            "ref": "Dom.html#.toggleClass",
                             "tf": 110
                           },
                           "Dom.html#.empty": {
                             "ref": "Dom.html#.empty",
+                            "tf": 110
+                          },
+                          "Dom.html#.injectTemplate": {
+                            "ref": "Dom.html#.injectTemplate",
                             "tf": 110
                           }
                         },
@@ -1864,16 +1929,53 @@ window.lunrData = {
                     "docs": {},
                     "r": {
                       "docs": {
-                        "Dom.html#.getViewportWidth": {
-                          "ref": "Dom.html#.getViewportWidth",
-                          "tf": 12.5
-                        },
                         "Dom.html#.getViewportHeight": {
                           "ref": "Dom.html#.getViewportHeight",
+                          "tf": 12.5
+                        },
+                        "Dom.html#.getViewportWidth": {
+                          "ref": "Dom.html#.getViewportWidth",
                           "tf": 12.5
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "h": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "h": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Dom.html#.getViewportHeight": {
+                        "ref": "Dom.html#.getViewportHeight",
+                        "tf": 12.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Dom.html#.hide": {
+                    "ref": "Dom.html#.hide",
+                    "tf": 708.3333333333334
                   }
                 }
               }
@@ -1896,12 +1998,12 @@ window.lunrData = {
                       "docs": {},
                       "t": {
                         "docs": {
-                          "Dom.html#.getViewportWidth": {
-                            "ref": "Dom.html#.getViewportWidth",
-                            "tf": 12.5
-                          },
                           "Dom.html#.getViewportHeight": {
                             "ref": "Dom.html#.getViewportHeight",
+                            "tf": 12.5
+                          },
+                          "Dom.html#.getViewportWidth": {
+                            "ref": "Dom.html#.getViewportWidth",
                             "tf": 12.5
                           }
                         }
@@ -1995,6 +2097,10 @@ window.lunrData = {
                 "ref": "Dom.html#.containsClass",
                 "tf": 25
               },
+              "Dom.html#.toggleClass": {
+                "ref": "Dom.html#.toggleClass",
+                "tf": 25
+              },
               "Dom.html#.empty": {
                 "ref": "Dom.html#.empty",
                 "tf": 33.33333333333333
@@ -2026,13 +2132,17 @@ window.lunrData = {
                           "ref": "Dom.html#.show",
                           "tf": 25
                         },
-                        "Dom.html#.injectTemplate": {
-                          "ref": "Dom.html#.injectTemplate",
-                          "tf": 7.142857142857142
+                        "Dom.html#.toggleClass": {
+                          "ref": "Dom.html#.toggleClass",
+                          "tf": 16.666666666666664
                         },
                         "Dom.html#.empty": {
                           "ref": "Dom.html#.empty",
                           "tf": 16.666666666666664
+                        },
+                        "Dom.html#.injectTemplate": {
+                          "ref": "Dom.html#.injectTemplate",
+                          "tf": 7.142857142857142
                         }
                       },
                       "w": {
@@ -2210,6 +2320,46 @@ window.lunrData = {
               }
             }
           },
+          "o": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Dom.html#.toggleClass": {
+                      "ref": "Dom.html#.toggleClass",
+                      "tf": 16.666666666666664
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "c": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            "s": {
+                              "docs": {
+                                "Dom.html#.toggleClass": {
+                                  "ref": "Dom.html#.toggleClass",
+                                  "tf": 675
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "e": {
             "docs": {},
             "m": {
@@ -2284,46 +2434,9 @@ window.lunrData = {
               }
             }
           }
-        },
-        "h": {
-          "docs": {},
-          "i": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Dom.html#.hide": {
-                    "ref": "Dom.html#.hide",
-                    "tf": 708.3333333333334
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "h": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Dom.html#.getViewportHeight": {
-                        "ref": "Dom.html#.getViewportHeight",
-                        "tf": 12.5
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 166
+      "length": 175
     },
     "corpusTokens": [
       "act",
@@ -2358,6 +2471,7 @@ window.lunrData = {
       "dom.setclass",
       "dom.setvalu",
       "dom.show",
+      "dom.toggleclass",
       "el",
       "element",
       "elementwil",
@@ -2405,6 +2519,8 @@ window.lunrData = {
       "show",
       "simpli",
       "templat",
+      "toggl",
+      "toggleclass",
       "true",
       "type",
       "valu",
@@ -2461,6 +2577,16 @@ window.lunrData = {
       "summary": "",
       "description": "DOM related functions",
       "body": ""
+    },
+    "Dom.html#.getViewportHeight": {
+      "id": "Dom.html#.getViewportHeight",
+      "kind": "function",
+      "title": "&lt;static&gt; getViewportHeight()",
+      "longname": "Dom.getViewportHeight",
+      "name": "getViewportHeight",
+      "tags": "Dom.getViewportHeight getViewportHeight",
+      "summary": "",
+      "description": "Gets the height of the browser viewport"
     },
     "Dom.html#.getViewportWidth": {
       "id": "Dom.html#.getViewportWidth",
@@ -2592,25 +2718,15 @@ window.lunrData = {
       "summary": "",
       "description": "Returns true if it contains the class"
     },
-    "Dom.html#.getViewportHeight": {
-      "id": "Dom.html#.getViewportHeight",
+    "Dom.html#.toggleClass": {
+      "id": "Dom.html#.toggleClass",
       "kind": "function",
-      "title": "&lt;static&gt; getViewportHeight()",
-      "longname": "Dom.getViewportHeight",
-      "name": "getViewportHeight",
-      "tags": "Dom.getViewportHeight getViewportHeight",
+      "title": "&lt;static&gt; toggleClass( el, cls )",
+      "longname": "Dom.toggleClass",
+      "name": "toggleClass",
+      "tags": "Dom.toggleClass toggleClass",
       "summary": "",
-      "description": "Gets the height of the browser viewport"
-    },
-    "Dom.html#.injectTemplate": {
-      "id": "Dom.html#.injectTemplate",
-      "kind": "function",
-      "title": "&lt;static&gt; injectTemplate( template, mount )",
-      "longname": "Dom.injectTemplate",
-      "name": "injectTemplate",
-      "tags": "Dom.injectTemplate injectTemplate",
-      "summary": "",
-      "description": "injectTemplate method - Injects a template element at a mount point"
+      "description": "Toggle class on element"
     },
     "Dom.html#.empty": {
       "id": "Dom.html#.empty",
@@ -2621,6 +2737,16 @@ window.lunrData = {
       "tags": "Dom.empty empty",
       "summary": "",
       "description": "Empty a element container"
+    },
+    "Dom.html#.injectTemplate": {
+      "id": "Dom.html#.injectTemplate",
+      "kind": "function",
+      "title": "&lt;static&gt; injectTemplate( template, mount )",
+      "longname": "Dom.injectTemplate",
+      "name": "injectTemplate",
+      "tags": "Dom.injectTemplate injectTemplate",
+      "summary": "",
+      "description": "injectTemplate method - Injects a template element at a mount point"
     }
   }
 };
