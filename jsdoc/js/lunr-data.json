@@ -90,7 +90,6 @@
           "dom.setvalu",
           "el",
           "element",
-          "elementwil",
           "function",
           "lt;static&gt",
           "method",
@@ -106,7 +105,6 @@
           "dom.getvalu",
           "el",
           "element",
-          "elementwil",
           "function",
           "get",
           "getvalu",
@@ -119,21 +117,21 @@
           "dom.selector",
           "full",
           "function",
-          "functionsupport",
           "lt;static&gt",
           "queri",
           "select",
-          "selector"
+          "selector",
+          "support"
         ],
         "Dom.html#.selectors": [
           "dom.selector",
           "full",
           "function",
-          "functionsupport",
           "lt;static&gt",
           "queri",
           "select",
-          "selector"
+          "selector",
+          "support"
         ],
         "Dom.html#.query": [
           "act",
@@ -141,11 +139,11 @@
           "el",
           "full",
           "function",
-          "functionsupport",
           "jqueri",
           "lt;static&gt",
           "queri",
-          "select"
+          "select",
+          "support"
         ],
         "Dom.html#.hide": [
           "dom.hid",
@@ -305,7 +303,7 @@
               "docs": {
                 "Dom.html#.query": {
                   "ref": "Dom.html#.query",
-                  "tf": 7.142857142857142
+                  "tf": 6.25
                 }
               }
             }
@@ -1291,15 +1289,15 @@
                     "docs": {
                       "Dom.html#.selector": {
                         "ref": "Dom.html#.selector",
-                        "tf": 10
+                        "tf": 8.333333333333332
                       },
                       "Dom.html#.selectors": {
                         "ref": "Dom.html#.selectors",
-                        "tf": 10
+                        "tf": 8.333333333333332
                       },
                       "Dom.html#.query": {
                         "ref": "Dom.html#.query",
-                        "tf": 7.142857142857142
+                        "tf": 6.25
                       }
                     },
                     "o": {
@@ -1308,12 +1306,43 @@
                         "docs": {
                           "Dom.html#.selector": {
                             "ref": "Dom.html#.selector",
-                            "tf": 693.3333333333334
+                            "tf": 691.6666666666667
                           },
                           "Dom.html#.selectors": {
                             "ref": "Dom.html#.selectors",
-                            "tf": 693.3333333333334
+                            "tf": 691.6666666666667
                           }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Dom.html#.selector": {
+                          "ref": "Dom.html#.selector",
+                          "tf": 8.333333333333332
+                        },
+                        "Dom.html#.selectors": {
+                          "ref": "Dom.html#.selectors",
+                          "tf": 8.333333333333332
+                        },
+                        "Dom.html#.query": {
+                          "ref": "Dom.html#.query",
+                          "tf": 6.25
                         }
                       }
                     }
@@ -1803,15 +1832,15 @@
                           },
                           "Dom.html#.selector": {
                             "ref": "Dom.html#.selector",
-                            "tf": 110
+                            "tf": 118.33333333333333
                           },
                           "Dom.html#.selectors": {
                             "ref": "Dom.html#.selectors",
-                            "tf": 110
+                            "tf": 118.33333333333333
                           },
                           "Dom.html#.query": {
                             "ref": "Dom.html#.query",
-                            "tf": 110
+                            "tf": 116.25
                           },
                           "Dom.html#.hide": {
                             "ref": "Dom.html#.hide",
@@ -1853,40 +1882,6 @@
                             "ref": "Dom.html#.injectTemplate",
                             "tf": 110
                           }
-                        },
-                        "s": {
-                          "docs": {},
-                          "u": {
-                            "docs": {},
-                            "p": {
-                              "docs": {},
-                              "p": {
-                                "docs": {},
-                                "o": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {
-                                        "Dom.html#.selector": {
-                                          "ref": "Dom.html#.selector",
-                                          "tf": 10
-                                        },
-                                        "Dom.html#.selectors": {
-                                          "ref": "Dom.html#.selectors",
-                                          "tf": 10
-                                        },
-                                        "Dom.html#.query": {
-                                          "ref": "Dom.html#.query",
-                                          "tf": 7.142857142857142
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
                         }
                       }
                     }
@@ -1900,15 +1895,15 @@
                 "docs": {
                   "Dom.html#.selector": {
                     "ref": "Dom.html#.selector",
-                    "tf": 10
+                    "tf": 8.333333333333332
                   },
                   "Dom.html#.selectors": {
                     "ref": "Dom.html#.selectors",
-                    "tf": 10
+                    "tf": 8.333333333333332
                   },
                   "Dom.html#.query": {
                     "ref": "Dom.html#.query",
-                    "tf": 7.142857142857142
+                    "tf": 6.25
                   }
                 }
               }
@@ -2118,11 +2113,11 @@
                       "docs": {
                         "Dom.html#.setValue": {
                           "ref": "Dom.html#.setValue",
-                          "tf": 6.25
+                          "tf": 12.5
                         },
                         "Dom.html#.getValue": {
                           "ref": "Dom.html#.getValue",
-                          "tf": 6.25
+                          "tf": 12.5
                         },
                         "Dom.html#.hide": {
                           "ref": "Dom.html#.hide",
@@ -2143,24 +2138,6 @@
                         "Dom.html#.injectTemplate": {
                           "ref": "Dom.html#.injectTemplate",
                           "tf": 7.142857142857142
-                        }
-                      },
-                      "w": {
-                        "docs": {},
-                        "i": {
-                          "docs": {},
-                          "l": {
-                            "docs": {
-                              "Dom.html#.setValue": {
-                                "ref": "Dom.html#.setValue",
-                                "tf": 6.25
-                              },
-                              "Dom.html#.getValue": {
-                                "ref": "Dom.html#.getValue",
-                                "tf": 6.25
-                              }
-                            }
-                          }
                         }
                       }
                     }
@@ -2396,15 +2373,15 @@
                   "docs": {
                     "Dom.html#.selector": {
                       "ref": "Dom.html#.selector",
-                      "tf": 43.33333333333333
+                      "tf": 41.66666666666666
                     },
                     "Dom.html#.selectors": {
                       "ref": "Dom.html#.selectors",
-                      "tf": 43.33333333333333
+                      "tf": 41.66666666666666
                     },
                     "Dom.html#.query": {
                       "ref": "Dom.html#.query",
-                      "tf": 714.2857142857143
+                      "tf": 712.5
                     }
                   }
                 }
@@ -2426,7 +2403,7 @@
                     "docs": {
                       "Dom.html#.query": {
                         "ref": "Dom.html#.query",
-                        "tf": 7.142857142857142
+                        "tf": 6.25
                       }
                     }
                   }
@@ -2436,7 +2413,7 @@
           }
         }
       },
-      "length": 175
+      "length": 173
     },
     "corpusTokens": [
       "act",
@@ -2474,11 +2451,9 @@
       "dom.toggleclass",
       "el",
       "element",
-      "elementwil",
       "empti",
       "full",
       "function",
-      "functionsupport",
       "get",
       "getvalu",
       "getviewportheight",
@@ -2518,6 +2493,7 @@
       "setvalu",
       "show",
       "simpli",
+      "support",
       "templat",
       "toggl",
       "toggleclass",
@@ -2606,7 +2582,7 @@
       "name": "setValue",
       "tags": "Dom.setValue setValue",
       "summary": "",
-      "description": "Sets the value of an elementWill detect the correct method to do so by element type"
+      "description": "Sets the value of an element Will detect the correct method to do so by element type"
     },
     "Dom.html#.getValue": {
       "id": "Dom.html#.getValue",
@@ -2616,7 +2592,7 @@
       "name": "getValue",
       "tags": "Dom.getValue getValue",
       "summary": "",
-      "description": "Gets the value of an elementWill detect the correct method to do so by element type"
+      "description": "Gets the value of an element Will detect the correct method to do so by element type"
     },
     "Dom.html#.selector": {
       "id": "Dom.html#.selector",
@@ -2626,7 +2602,7 @@
       "name": "selector",
       "tags": "Dom.selector selector",
       "summary": "",
-      "description": "Selector functionSupports full query selection"
+      "description": "Selector function Supports full query selection"
     },
     "Dom.html#.selectors": {
       "id": "Dom.html#.selectors",
@@ -2636,7 +2612,7 @@
       "name": "selectors",
       "tags": "Dom.selectors selectors",
       "summary": "",
-      "description": "Selectors functionSupports full query selection"
+      "description": "Selectors function Supports full query selection"
     },
     "Dom.html#.query": {
       "id": "Dom.html#.query",
@@ -2646,7 +2622,7 @@
       "name": "query",
       "tags": "Dom.query query",
       "summary": "",
-      "description": "Query functionSupports full query selection but acts like jQuery"
+      "description": "Query function Supports full query selection but acts like jQuery"
     },
     "Dom.html#.hide": {
       "id": "Dom.html#.hide",
