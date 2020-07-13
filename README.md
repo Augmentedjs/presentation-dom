@@ -43,6 +43,20 @@ Augmented.js Presentation Dom Module
         -   [Parameters](#parameters-13)
     -   [injectTemplate](#injecttemplate)
         -   [Parameters](#parameters-14)
+-   [stringToHTML](#stringtohtml)
+    -   [Parameters](#parameters-15)
+-   [getAttributes](#getattributes)
+    -   [Parameters](#parameters-16)
+-   [createDOMMap](#createdommap)
+    -   [Parameters](#parameters-17)
+-   [addAttributes](#addattributes)
+    -   [Parameters](#parameters-18)
+-   [diffAtts](#diffatts)
+    -   [Parameters](#parameters-19)
+-   [makeElem](#makeelem)
+    -   [Parameters](#parameters-20)
+-   [diff](#diff)
+    -   [Parameters](#parameters-21)
 
 ## $
 
@@ -145,7 +159,7 @@ Shows an element
 #### Parameters
 
 -   `el` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling))** el Element or string of element selector
--   `display` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Value to set for 'display' property (optional)
+-   `display` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Value to set for "display" property (optional)
 
 ### setClass
 
@@ -220,3 +234,72 @@ injectTemplate method - Injects a template element at a mount point
 
 -   `template` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The template selector
 -   `mount` **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The mount point as Document.Element or String
+
+## stringToHTML
+
+Convert a template string into HTML DOM nodes
+
+### Parameters
+
+-   `str` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The template string
+
+Returns **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The template HTML
+
+## getAttributes
+
+Create an array of the attributes on an element
+
+### Parameters
+
+-   `attributes` **NamedNodeMap** The attributes on an element
+
+Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The attributes on an element as an array of key/value pairs
+
+## createDOMMap
+
+Create a DOM Tree Map for an element
+
+### Parameters
+
+-   `element` **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The element to map
+-   `isSVG` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** If true, node is within an SVG
+
+Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** A DOM tree map
+
+## addAttributes
+
+Add attributes to an element
+
+### Parameters
+
+-   `elem` **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The element
+-   `atts` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The attributes to add
+
+## diffAtts
+
+Diff the attributes on an existing element versus the template
+
+### Parameters
+
+-   `template` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The new template
+-   `existing` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The existing DOM node
+
+## makeElem
+
+Make an HTML element
+
+### Parameters
+
+-   `elem` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The element details
+
+Returns **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The HTML element
+
+## diff
+
+Diff the existing DOM node versus the template
+
+### Parameters
+
+-   `templateMap` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** A DOM tree map of the template content
+-   `domMap` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** A DOM tree map of the existing DOM node
+-   `elem` **[Node](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)** The element to render content into

@@ -1,0 +1,413 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>diff.js</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #607D8B;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #607D8B;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #607D8B;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #607D8B;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Presentation","systemSummary":"Augmented.js Next Presentation - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand branding-logo" href="index.html" style="background-image: url(img/jensen-silo-circle-small.png);">
+					Augmented.js Next Presentation
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#$">$</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Dom.html">Dom</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">diff.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">class Diff {
+  constructor() {
+  };
+  /*
+  static support() {
+  	if (!window.DOMParser) return false;
+  	const parser = new DOMParser();
+  	try {
+  		parser.parseFromString("x", "text/html");
+  	} catch(err) {
+  		return false;
+  	}
+  	return true;
+  };
+  */
+
+  /**
+   * Convert a template string into HTML DOM nodes
+   * @param  {String} str The template string
+   * @return {Node}       The template HTML
+   */
+  static stringToHTML(str) {
+  	// If DOMParser is supported, use it
+  	if (!window.DOMParser &amp;&amp; !window.DOMParser.parseFromString) {
+  		const parser = new DOMParser();
+  		const doc = parser.parseFromString(str, "text/html");
+  		return doc.body;
+  	}
+
+  	// Otherwise, fallback to old-school method
+  	const dom = document.createElement("div");
+  	dom.innerHTML = str;
+  	return dom;
+  };
+
+  /**
+   * Create an array of the attributes on an element
+   * @param  {NamedNodeMap} attributes The attributes on an element
+   * @return {Array}                   The attributes on an element as an array of key/value pairs
+   */
+  static getAttributes(attributes) {
+  	return Array.prototype.map.call(attributes, (attribute) => {
+  		return {
+  			att: attribute.name,
+  			value: attribute.value
+  		};
+  	});
+  };
+
+  /**
+   * Create a DOM Tree Map for an element
+   * @param  {Node}    element The element to map
+   * @param  {Boolean} isSVG   If true, node is within an SVG
+   * @return {Array}           A DOM tree map
+   */
+  static createDOMMap(element, isSVG) {
+  	return Array.prototype.map.call(element.childNodes, ((node) => {
+  		const details = {
+  			content: node.childNodes &amp;&amp; node.childNodes.length > 0 ? null : node.textContent,
+  			atts: node.nodeType !== 1 ? [] : this.getAttributes(node.attributes),
+  			type: node.nodeType === 3 ? "text" : (node.nodeType === 8 ? "comment" : node.tagName.toLowerCase()),
+  			node: node
+  		};
+  		details.isSVG = isSVG || details.type === "svg";
+  		details.children = this.createDOMMap(node, details.isSVG);
+  		return details;
+  	}));
+  };
+
+  static getStyleMap(styles) {
+  	return styles.split(";").reduce((arr, style) => {
+  		if (style.trim().indexOf(":") > 0) {
+  			const styleArr = style.split(":");
+  			arr.push({
+  				name: styleArr[0] ? styleArr[0].trim() : "",
+  				value: styleArr[1] ? styleArr[1].trim() : ""
+  			});
+  		}
+  		return arr;
+  	}, []);
+  };
+
+  static removeStyles(elem, styles) {
+  	styles.forEach((style) => {
+  		elem.style[style] = "";
+  	});
+  };
+
+  static changeStyles(elem, styles) {
+  	styles.forEach((style) => {
+  		elem.style[style.name] = style.value;
+  	});
+  };
+
+  static diffStyles(elem, styles) {
+  	// Get style map
+  	const styleMap = this.getStyleMap(styles);
+
+  	// Get styles to remove
+  	const remove = Array.prototype.filter.call(elem.style, (style) => {
+  		const findStyle = styleMap.find((newStyle) => {
+  			return newStyle.name === style &amp;&amp; newStyle.value === elem.style[style];
+  		});
+  		return findStyle === undefined;
+  	});
+
+  	// Add and remove styles
+  	this.removeStyles(elem, remove);
+  	this.changeStyles(elem, styleMap);
+  };
+
+  static removeAttributes(elem, atts) {
+  	atts.forEach((attribute) => {
+  		// If the attribute is a class, use className
+  		// Else if it"s style, remove all styles
+  		// Otherwise, use removeAttribute()
+  		if (attribute.att === "class") {
+  			elem.className = "";
+  		} else if (attribute.att === "style") {
+  			removeStyles(elem, Array.prototype.slice.call(elem.style));
+  		} else {
+  			elem.removeAttribute(attribute.att);
+  		}
+  	});
+  };
+
+  /**
+   * Add attributes to an element
+   * @param {Node}  elem The element
+   * @param {Array} atts The attributes to add
+   */
+  static addAttributes(elem, atts) {
+  	atts.forEach((attribute) => {
+  		// If the attribute is a class, use className
+  		// Else if it"s style, diff and update styles
+  		// Otherwise, set the attribute
+  		if (attribute.att === "class") {
+  			elem.className = attribute.value;
+  		} else if (attribute.att === "style") {
+  			diffStyles(elem, attribute.value);
+  		} else {
+  			elem.setAttribute(attribute.att, attribute.value || true);
+  		}
+  	});
+  };
+
+  /**
+   * Diff the attributes on an existing element versus the template
+   * @param  {Object} template The new template
+   * @param  {Object} existing The existing DOM node
+   */
+  static diffAtts(template, existing) {
+    // Get attributes to remove
+  	const remove = existing.atts.filter((att) => {
+  		const getAtt = template.atts.find((newAtt) => {
+  			return att.att === newAtt.att;
+  		});
+  		return getAtt === undefined;
+  	});
+
+  	// Get attributes to change
+  	const change = template.atts.filter((att) => {
+  		const getAtt = existing.atts.find((existingAtt) => {
+  			return att.att === existingAtt.att;
+  		});
+  		return getAtt === undefined || getAtt.value !== att.value;
+  	});
+
+  	// Add/remove any required attributes
+  	this.addAttributes(existing.node, change);
+  	this.removeAttributes(existing.node, remove);
+  };
+
+  /**
+   * Make an HTML element
+   * @param  {Object} elem The element details
+   * @return {Node}        The HTML element
+   */
+  static makeElem(elem) {
+  	// Create the element
+  	let node;
+  	if (elem.type === "text") {
+  		node = document.createTextNode(elem.content);
+  	} else if (elem.type === "comment") {
+  		node = document.createComment(elem.content);
+  	} else if (elem.isSVG) {
+  		node = document.createElementNS("http://www.w3.org/2000/svg", elem.type);
+  	} else {
+  		node = document.createElement(elem.type);
+  	}
+
+  	// Add attributes
+  	this.addAttributes(node, elem.atts);
+
+  	// If the element has child nodes, create them
+  	// Otherwise, add textContent
+  	if (elem.children.length > 0) {
+  		elem.children.forEach((childElem) => {
+  			node.appendChild(this.makeElem(childElem));
+  		});
+  	} else if (elem.type !== "text") {
+  		node.textContent = elem.content;
+  	}
+  	return node;
+  };
+
+  /**
+   * Diff the existing DOM node versus the template
+   * @param  {Array} templateMap A DOM tree map of the template content
+   * @param  {Array} domMap      A DOM tree map of the existing DOM node
+   * @param  {Node}  elem        The element to render content into
+   */
+  static diff(templateMap, domMap, elem) {
+  	// If extra elements in domMap, remove them
+  	const count = domMap.length - templateMap.length;
+  	if (count > 0) {
+  		for (; count > 0; count--) {
+  			domMap[domMap.length - count].node.parentNode.removeChild(domMap[domMap.length - count].node);
+  		}
+  	}
+
+    let changes = 0;
+  	// Diff each item in the templateMap
+  	templateMap.forEach((node, index) => {
+
+  		// If element doesn"t exist, create it
+  		if (!domMap[index]) {
+        changes++;
+  			elem.appendChild(this.makeElem(templateMap[index]));
+  			return;
+  		}
+
+  		// If element is not the same type, replace it with new element
+  		if (templateMap[index].type !== domMap[index].type) {
+        changes++;
+  			domMap[index].node.parentNode.replaceChild(this.makeElem(templateMap[index]), domMap[index].node);
+  			return;
+  		}
+
+  		// If attributes are different, update them
+  		this.diffAtts(templateMap[index], domMap[index]);
+
+  		// If content is different, update it
+  		if (templateMap[index].content !== domMap[index].content) {
+        changes++;
+  			domMap[index].node.textContent = templateMap[index].content;
+  		}
+
+  		// If target element should be empty, wipe it
+  		if (domMap[index].children.length > 0 &amp;&amp; node.children.length &lt; 1) {
+        changes++;
+  			domMap[index].node.innerHTML = "";
+  			return;
+  		}
+
+  		// If element is empty and shouldn"t be, build it up
+  		// This uses a document fragment to minimize reflows
+  		if (domMap[index].children.length &lt; 1 &amp;&amp; node.children.length > 0) {
+  			const fragment = document.createDocumentFragment();
+  			changes += this.diff(node.children, domMap[index].children, fragment);
+  			elem.appendChild(fragment);
+  			return;
+  		}
+
+  		// If there are existing child elements that need to be modified, diff them
+  		if (node.children.length > 0) {
+  			changes += this.diff(node.children, domMap[index].children, domMap[index].node);
+  		}
+  	});
+    return changes;
+  };
+};
+
+export default Diff;
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Mon Jul 13th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

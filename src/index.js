@@ -1,4 +1,5 @@
 import Dom from "./dom.js";
+import Diff from "./diff.js";
 
 /**
  * Augmented jQuery-like selectors usinge native selectors</br/>
@@ -13,5 +14,4 @@ import Dom from "./dom.js";
  */
 const $ = Dom.query;
 
-module.exports = Dom;
-module.exports.$ = $;
+export { Dom, Diff, $ };

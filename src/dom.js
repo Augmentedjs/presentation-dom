@@ -142,7 +142,7 @@ class Dom {
   /**
    * Shows an element
    * @param {string|Node} el el Element or string of element selector
-   * @param {string} display Value to set for 'display' property (optional)
+   * @param {string} display Value to set for "display" property (optional)
    * @static
    */
   static show(el, display) {
@@ -228,7 +228,7 @@ class Dom {
   /**
    * Toggle class on element
    * @param {string|Node} el Element or string of element selector
-   * @param {string} cls the class 
+   * @param {string} cls the class
    * @static
    */
   static toggleClass(el, cls) {

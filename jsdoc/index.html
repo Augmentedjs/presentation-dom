@@ -193,6 +193,41 @@
 </li>
 </ul>
 </li>
+<li><a href="#stringtohtml">stringToHTML</a>
+<ul>
+<li><a href="#parameters-15">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#getattributes">getAttributes</a>
+<ul>
+<li><a href="#parameters-16">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#createdommap">createDOMMap</a>
+<ul>
+<li><a href="#parameters-17">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#addattributes">addAttributes</a>
+<ul>
+<li><a href="#parameters-18">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#diffatts">diffAtts</a>
+<ul>
+<li><a href="#parameters-19">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#makeelem">makeElem</a>
+<ul>
+<li><a href="#parameters-20">Parameters</a></li>
+</ul>
+</li>
+<li><a href="#diff">diff</a>
+<ul>
+<li><a href="#parameters-21">Parameters</a></li>
+</ul>
+</li>
 </ul>
 <h2>$</h2>
 <p>Augmented jQuery-like selectors usinge native selectors&lt;/br/&gt;<br>
@@ -264,7 +299,7 @@ Supports full query selection but acts like jQuery</p>
 <h4>Parameters</h4>
 <ul>
 <li><code>el</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a>)</strong> el Element or string of element selector</li>
-<li><code>display</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> Value to set for 'display' property (optional)</li>
+<li><code>display</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> Value to set for &quot;display&quot; property (optional)</li>
 </ul>
 <h3>setClass</h3>
 <p>Sets the class attribute (completely)</p>
@@ -322,6 +357,57 @@ Supports full query selection but acts like jQuery</p>
 <ul>
 <li><code>template</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The template selector</li>
 <li><code>mount</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The mount point as Document.Element or String</li>
+</ul>
+<h2>stringToHTML</h2>
+<p>Convert a template string into HTML DOM nodes</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>str</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></strong> The template string</li>
+</ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The template HTML</p>
+<h2>getAttributes</h2>
+<p>Create an array of the attributes on an element</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>attributes</code> <strong>NamedNodeMap</strong> The attributes on an element</li>
+</ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></strong> The attributes on an element as an array of key/value pairs</p>
+<h2>createDOMMap</h2>
+<p>Create a DOM Tree Map for an element</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>element</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The element to map</li>
+<li><code>isSVG</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></strong> If true, node is within an SVG</li>
+</ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></strong> A DOM tree map</p>
+<h2>addAttributes</h2>
+<p>Add attributes to an element</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>elem</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The element</li>
+<li><code>atts</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></strong> The attributes to add</li>
+</ul>
+<h2>diffAtts</h2>
+<p>Diff the attributes on an existing element versus the template</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>template</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></strong> The new template</li>
+<li><code>existing</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></strong> The existing DOM node</li>
+</ul>
+<h2>makeElem</h2>
+<p>Make an HTML element</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>elem</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></strong> The element details</li>
+</ul>
+<p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The HTML element</p>
+<h2>diff</h2>
+<p>Diff the existing DOM node versus the template</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>templateMap</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></strong> A DOM tree map of the template content</li>
+<li><code>domMap</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></strong> A DOM tree map of the existing DOM node</li>
+<li><code>elem</code> <strong><a href="https://developer.mozilla.org/docs/Web/API/Node/nextSibling">Node</a></strong> The element to render content into</li>
 </ul></article>
 		</section>
 			</div>
@@ -332,7 +418,7 @@ Supports full query selection but acts like jQuery</p>
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Thu Jul 9th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Mon Jul 13th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
