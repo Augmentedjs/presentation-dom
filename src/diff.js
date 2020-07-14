@@ -125,6 +125,8 @@ class Diff {
   			elem.className = attribute.value;
   		} else if (attribute.att === "style") {
   			this.diffStyles(elem, attribute.value);
+      } else if (attribute.att === "value") {
+        elem.setAttribute(attribute.att, attribute.value || "");
   		} else {
   			elem.setAttribute(attribute.att, attribute.value || true);
   		}

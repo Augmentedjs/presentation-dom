@@ -91,6 +91,33 @@ describe("Given a DOM", () => {
       expect(changes).to.not.equal(0);
     });
 
+    it("Can diff a DOM with an empty input", async () => {
+      const app = document.querySelector("#app");
+      app.innerHTML = `<div><h1 data-header="1">Test</h1><input type="text" id="t" value="rex" class="material"/><button>click me</button></div>`;
+      const change = document.createElement("div");
+      change.id = "app";
+      change.innerHTML = `<div><input type="text" id="s" value="rover" /><button>click me!</button><button class="x" type="reset">Reset</button></div>`;
+
+      const i = document.createElement("input");
+      i.id = "bonobo";
+      i.setAttribute("value", "");
+      i.setAttribute("checked", true);
+      i.dataset.type = "text";
+      i.classList = "x";
+      i.type = "text";
+      change.appendChild(i);
+
+      const domMap = DomLib.Diff.createDOMMap(app);
+      const changeMap = DomLib.Diff.createDOMMap(change);
+      // Diff the DOM
+      const changes = DomLib.Diff.diff(changeMap, domMap, app);
+
+      console.debug("dom", app.innerHTML);
+      console.debug("changes", changes);
+      expect(app).to.not.be.undefined;
+      expect(changes).to.not.equal(0);
+    });
+
 
   });
 });
