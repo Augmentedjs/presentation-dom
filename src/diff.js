@@ -1,18 +1,5 @@
 class Diff {
-  constructor() {
-  };
-  /*
-  static support() {
-  	if (!window.DOMParser) return false;
-  	const parser = new DOMParser();
-  	try {
-  		parser.parseFromString("x", "text/html");
-  	} catch(err) {
-  		return false;
-  	}
-  	return true;
-  };
-  */
+  constructor() {};
 
   /**
    * Convert a template string into HTML DOM nodes
@@ -112,7 +99,7 @@ class Diff {
   static removeAttributes(elem, atts) {
   	atts.forEach((attribute) => {
   		// If the attribute is a class, use className
-  		// Else if it"s style, remove all styles
+  		// Else if it's style, remove all styles
   		// Otherwise, use removeAttribute()
   		if (attribute.att === "class") {
   			elem.className = "";
@@ -132,7 +119,7 @@ class Diff {
   static addAttributes(elem, atts) {
   	atts.forEach((attribute) => {
   		// If the attribute is a class, use className
-  		// Else if it"s style, diff and update styles
+  		// Else if it's style, diff and update styles
   		// Otherwise, set the attribute
   		if (attribute.att === "class") {
   			elem.className = attribute.value;
@@ -150,9 +137,11 @@ class Diff {
    * @param  {Object} existing The existing DOM node
    */
   static diffAtts(template, existing) {
+    let changes = 0;
     // Get attributes to remove
   	const remove = existing.atts.filter((att) => {
   		const getAtt = template.atts.find((newAtt) => {
+        changes++;
   			return att.att === newAtt.att;
   		});
   		return getAtt === undefined;
@@ -161,6 +150,7 @@ class Diff {
   	// Get attributes to change
   	const change = template.atts.filter((att) => {
   		const getAtt = existing.atts.find((existingAtt) => {
+        changes++;
   			return att.att === existingAtt.att;
   		});
   		return getAtt === undefined || getAtt.value !== att.value;
@@ -169,6 +159,7 @@ class Diff {
   	// Add/remove any required attributes
   	this.addAttributes(existing.node, change);
   	this.removeAttributes(existing.node, remove);
+    return changes;
   };
 
   /**
@@ -212,18 +203,18 @@ class Diff {
    */
   static diff(templateMap, domMap, elem) {
   	// If extra elements in domMap, remove them
+    let changes = 0;
   	let count = domMap.length - templateMap.length;
   	if (count > 0) {
   		for (; count > 0; count--) {
+        changes++;
   			domMap[domMap.length - count].node.parentNode.removeChild(domMap[domMap.length - count].node);
   		}
   	}
 
-    let changes = 0;
   	// Diff each item in the templateMap
   	templateMap.forEach((node, index) => {
-
-  		// If element doesn"t exist, create it
+  		// If element doesn't exist, create it
   		if (!domMap[index]) {
         changes++;
   			elem.appendChild(this.makeElem(templateMap[index]));
@@ -238,7 +229,7 @@ class Diff {
   		}
 
   		// If attributes are different, update them
-  		this.diffAtts(templateMap[index], domMap[index]);
+  		changes += this.diffAtts(templateMap[index], domMap[index]);
 
   		// If content is different, update it
   		if (templateMap[index].content !== domMap[index].content) {
@@ -253,7 +244,7 @@ class Diff {
   			return;
   		}
 
-  		// If element is empty and shouldn"t be, build it up
+  		// If element is empty and shouldn't be, build it up
   		// This uses a document fragment to minimize reflows
   		if (domMap[index].children.length < 1 && node.children.length > 0) {
   			const fragment = document.createDocumentFragment();
