@@ -117,7 +117,7 @@ class Diff {
   		if (attribute.att === "class") {
   			elem.className = "";
   		} else if (attribute.att === "style") {
-  			removeStyles(elem, Array.prototype.slice.call(elem.style));
+  			this.removeStyles(elem, Array.prototype.slice.call(elem.style));
   		} else {
   			elem.removeAttribute(attribute.att);
   		}
@@ -137,7 +137,7 @@ class Diff {
   		if (attribute.att === "class") {
   			elem.className = attribute.value;
   		} else if (attribute.att === "style") {
-  			diffStyles(elem, attribute.value);
+  			this.diffStyles(elem, attribute.value);
   		} else {
   			elem.setAttribute(attribute.att, attribute.value || true);
   		}
@@ -212,7 +212,7 @@ class Diff {
    */
   static diff(templateMap, domMap, elem) {
   	// If extra elements in domMap, remove them
-  	const count = domMap.length - templateMap.length;
+  	let count = domMap.length - templateMap.length;
   	if (count > 0) {
   		for (; count > 0; count--) {
   			domMap[domMap.length - count].node.parentNode.removeChild(domMap[domMap.length - count].node);
